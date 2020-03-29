@@ -25,6 +25,16 @@ export const HeaderContainer = styled.header`
   height: 100px;
 `;
 
+export const SiderContainer = styled.header`
+  position: fixed;
+  width: 40px;
+  height: 100px;
+  left: 40px;
+  bottom: 0;
+  right: auto;
+  z-index: 1;
+`;
+
 export const SectionContainer = styled.section`
   display: flex;
   max-width: 1000px;

@@ -17,6 +17,6 @@ export const MenuContainer = styled.div`
     flex-direction: row;
 `
 
-export const Menu = styled.div`
+export const Menu = styled.a`
     padding: 12px;
 `

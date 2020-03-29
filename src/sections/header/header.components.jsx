@@ -18,10 +18,10 @@ const Header = () => {
             <LogoIcon />
         </LogoContainer>
         <MenuContainer>
-            <Menu>About</Menu>
-            <Menu>Career</Menu>
-            <Menu>Project</Menu>
-            <Menu>Contact</Menu>
+            <Menu href="/#about">About</Menu>
+            <Menu href="/#career">Career</Menu>
+            <Menu href="/#project">Project</Menu>
+            <Menu href="/#contact">Contact</Menu>
             <Menu>
                 <CustomLink>Resume</CustomLink>
             </Menu>

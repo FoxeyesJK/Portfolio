@@ -1,41 +1,51 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { GlobalStyle } from './global.styles'
 import {
   AppContainer,
   BodyContainer,
   HeaderContainer,
+  SiderContainer,
   SectionContainer,
   FooterContainer
 } from './App.styles'
 
 import Header from './sections/header/header.components'
+import Sider from './sections/sider/sider.components'
 import Intro from './sections/intro/intro.components'
 import About from './sections/about/about.components'
 import Career from './sections/career/career.components'
+import Project from './sections/project/project.components'
+import Contact from './sections/contact/contact.components'
 import Footer from './sections/footer/footer.components'
+
+// componentDidMount: function() {
+//   window.addEventListener('scroll', this.handleScroll);
+// },
 
 
 const App = () => {
 
-  const onScroll = () => {
-    console.log('hi')
-    const scrollY = window.scrollY //Don't get confused by what's scrolling - It's not the window
-    const scrollTop = this.myRef.current.scrollTop
-    console.log(`onScroll, window.scrollY: ${scrollY} myRef.scrollTop: ${scrollTop}`)
-    this.setState({
-      scrollTop: scrollTop
-    })
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, [])
+
+  const handleScroll = () => {
+    console.log('scrolled')
   }
 
   return(
-    <AppContainer onScroll={onScroll}>
+    <AppContainer>
       <GlobalStyle />
       <HeaderContainer><Header /></HeaderContainer>
+      <SiderContainer><Sider /></SiderContainer>
+      <SiderContainer></SiderContainer>
       <BodyContainer>
         <SectionContainer><Intro /></SectionContainer>
-        <SectionContainer><About /></SectionContainer>
-        <SectionContainer><Career /></SectionContainer>
+        <SectionContainer id="about"><About /></SectionContainer>
+        <SectionContainer id="career"><Career /></SectionContainer>
+        <SectionContainer id="project"><Project /></SectionContainer>
+        <SectionContainer id="contact"><Contact /></SectionContainer>
       </BodyContainer>
       <FooterContainer><Footer /></FooterContainer>
     </AppContainer>

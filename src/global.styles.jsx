@@ -9,4 +9,9 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${MainColor};
         color: ${TextColor};
     }
+
+    a {
+        color: ${TextColor};
+        text-decoration: none;
+    }
 `
