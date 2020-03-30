@@ -36,10 +36,9 @@ export const SiderLeftContainer = styled.div`
 `;
 
 export const SiderRightContainer = styled.div`
-  transform: rotate(90deg);
   position: fixed;
   width: 40px;
-  height: 100px;
+  height: 280px;
   left: auto;
   bottom: 0;
   right: 40px;

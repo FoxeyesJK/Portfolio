@@ -8,7 +8,7 @@ import {
 const SiderRight = () => {
     return (
         <SiderRightContainer>
-            <Link href="jake.kw@iottie.com">jake.kw@iottie.com</Link>
+            <Link href="mailto:jake.kw@iottie.com">jake.kw@iottie.com</Link>
         </SiderRightContainer>
     )
 }
