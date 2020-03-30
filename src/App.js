@@ -5,13 +5,15 @@ import {
   AppContainer,
   BodyContainer,
   HeaderContainer,
-  SiderContainer,
+  SiderLeftContainer,
+  SiderRightContainer,
   SectionContainer,
   FooterContainer
 } from './App.styles'
 
 import Header from './sections/header/header.components'
-import Sider from './sections/sider/sider.components'
+import SiderLeft from './sections/sider-left/sider-left.components'
+import SiderRight from './sections/sider-right/sider-right.components'
 import Intro from './sections/intro/intro.components'
 import About from './sections/about/about.components'
 import Career from './sections/career/career.components'
@@ -38,8 +40,8 @@ const App = () => {
     <AppContainer>
       <GlobalStyle />
       <HeaderContainer><Header /></HeaderContainer>
-      <SiderContainer><Sider /></SiderContainer>
-      <SiderContainer></SiderContainer>
+      <SiderLeftContainer><SiderLeft /></SiderLeftContainer>
+      <SiderRightContainer><SiderRight /></SiderRightContainer>
       <BodyContainer>
         <SectionContainer><Intro /></SectionContainer>
         <SectionContainer id="about"><About /></SectionContainer>

@@ -22,9 +22,7 @@ const Header = () => {
             <Menu href="/#career">Career</Menu>
             <Menu href="/#project">Project</Menu>
             <Menu href="/#contact">Contact</Menu>
-            <Menu>
-                <CustomLink>Resume</CustomLink>
-            </Menu>
+            <CustomLink>Resume</CustomLink>
         </MenuContainer>
     </HeaderContainer>
     )    

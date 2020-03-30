@@ -25,13 +25,24 @@ export const HeaderContainer = styled.header`
   height: 100px;
 `;
 
-export const SiderContainer = styled.header`
+export const SiderLeftContainer = styled.div`
   position: fixed;
   width: 40px;
-  height: 100px;
+  height: 180px;
   left: 40px;
   bottom: 0;
   right: auto;
+  z-index: 1;
+`;
+
+export const SiderRightContainer = styled.div`
+  transform: rotate(90deg);
+  position: fixed;
+  width: 40px;
+  height: 100px;
+  left: auto;
+  bottom: 0;
+  right: 40px;
   z-index: 1;
 `;
 
