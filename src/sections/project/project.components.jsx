@@ -1,13 +1,19 @@
 import React from 'react'
 
 import {
-    ProjectContainer
+    ProjectContainer,
+    ProjectHeader,
+    ContentsContainer,
+
 } from './project.styles'
 
 const Project = () => {
     return (
         <ProjectContainer>
-            Project
+            <ProjectHeader>Things I've Built</ProjectHeader>
+            <ContentsContainer>FC Manager</ContentsContainer>
+            <ContentsContainer>Shopify Renewal</ContentsContainer>
+            <ContentsContainer>Portfolio</ContentsContainer>
         </ProjectContainer>
     )
 }

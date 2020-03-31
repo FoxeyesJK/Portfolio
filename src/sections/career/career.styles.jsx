@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import { HeaderStyles } from '../../global.styles';
 
 export const CareerContainer = styled.div`
 
 `
 
 export const CareerHeader = styled.div`
-
+    ${HeaderStyles}
 `
 
 export const ContentsContainer = styled.div`

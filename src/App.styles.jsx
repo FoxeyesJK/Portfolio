@@ -15,6 +15,7 @@ export const BodyContainer = styled.div`
   padding: 0 200px;
   margin: 0 auto;
   display: block;
+
 `;
 
 export const HeaderContainer = styled.header`
@@ -48,9 +49,12 @@ export const SiderRightContainer = styled.div`
 export const SectionContainer = styled.section`
   display: flex;
   max-width: 1000px;
-  min-height: 100vh;
   margin: 0px auto;
   padding: 150px 0;
+
+  &:first-child {
+    min-height: 100vh;
+  }
 `;
 
 export const FooterContainer = styled.footer`

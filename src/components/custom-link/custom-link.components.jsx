@@ -4,9 +4,9 @@ import {
   Link
 } from './custom-link.styles'
 
-const CustomLink = ({ children }) => {
+const CustomLink = ({ children, ...otherProps }) => {
     return (
-      <Link href="">
+      <Link href="" {...otherProps}>
         {children}
       </Link>
     )
