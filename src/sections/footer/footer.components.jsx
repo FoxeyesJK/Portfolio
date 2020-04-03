@@ -1,14 +1,15 @@
 import React from 'react'
 
 import {
-
+  FooterContainer,
+  Credential
 } from './footer.styles'
 
 const Footer = () => {
     return (
-      <div>
-
-     </div>
+      <FooterContainer>
+        <Credential>Developed by Jake Kwon</Credential>
+     </FooterContainer>
     )
 }
 
