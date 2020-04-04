@@ -10,10 +10,10 @@ import {
 import { ReactComponent as LogoIcon } from '../../assets/icon-logo.svg'
 import CustomLink from '../../components/custom-link/custom-link.components'
 
-const Header = () => {
+const Header = ({isScrolled}) => {
 
     return (
-    <HeaderContainer>
+    <HeaderContainer isScrolled={isScrolled}>
         <LogoContainer>
             <LogoIcon />
         </LogoContainer>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { GlobalStyle } from './global.styles'
 import {
@@ -27,19 +27,34 @@ import Footer from './sections/footer/footer.components'
 
 
 const App = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  //componentDidMount()
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
   }, [])
 
+  //componentWillUnmount()
+  useEffect(() => {
+    return () => console.log('I am unmounting');
+  }, [])
+
   const handleScroll = () => {
     console.log('scrolled')
+    const top = window.scrollY;
+
+    if(top > 1) {
+      setIsScrolled(true)
+      //style change
+    } else {
+      setIsScrolled(false)
+    }
   }
 
   return(
     <AppContainer>
       <GlobalStyle />
-      <HeaderContainer><Header /></HeaderContainer>
+      <HeaderContainer isScrolled={isScrolled}><Header isScrolled={isScrolled} /></HeaderContainer>
       <SiderLeftContainer><SiderLeft /></SiderLeftContainer>
       <SiderRightContainer><SiderRight /></SiderRightContainer>
       <BodyContainer>

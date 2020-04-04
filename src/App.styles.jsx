@@ -5,7 +5,6 @@ import { MainColor } from './global.styles';
 export const AppContainer = styled.div`
   background-color: ${MainColor}
   padding: 200px 150px;
-  overflow: scroll;
 `;
 
 export const BodyContainer = styled.div`
@@ -23,7 +22,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: ${props => props.isScrolled ? '70px' : '100px'};
 `;
 
 export const SiderLeftContainer = styled.div`
