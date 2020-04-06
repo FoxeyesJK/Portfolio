@@ -18,7 +18,7 @@ const Header = ({isScrolled}) => {
             <LogoIcon />
         </LogoContainer>
         <MenuContainer>
-            <Menu href="/#about">About</Menu>
+            <Menu href="/#about" style={{ transitionDelay: `100ms` }}>About</Menu>
             <Menu href="/#career">Career</Menu>
             <Menu href="/#project">Project</Menu>
             <Menu href="/#contact">Contact</Menu>

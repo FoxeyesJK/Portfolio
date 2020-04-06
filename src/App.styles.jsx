@@ -54,6 +54,16 @@ export const SectionContainer = styled.section`
   &:first-child {
     min-height: 100vh;
   }
+
+  // width: 100%;
+  // height: 500px;
+  // z-index:0; 
+  // -webkit-transform: translateZ( 0 );
+  // transform: translateZ( 0 );
+  // -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  // transition: transform 0.6s ease-in-out;
+  // -webkit-backface-visibility: hidden;
+  // backface-visibility: hidden;
 `;
 
 export const FooterContainer = styled.footer`

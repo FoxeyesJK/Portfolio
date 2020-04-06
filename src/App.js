@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Route } from "react-router-dom"
 
 import { GlobalStyle } from './global.styles'
 import {
@@ -52,20 +53,20 @@ const App = () => {
   }
 
   return(
-    <AppContainer>
-      <GlobalStyle />
-      <HeaderContainer isScrolled={isScrolled}><Header isScrolled={isScrolled} /></HeaderContainer>
-      <SiderLeftContainer><SiderLeft /></SiderLeftContainer>
-      <SiderRightContainer><SiderRight /></SiderRightContainer>
-      <BodyContainer>
-        <SectionContainer><Intro /></SectionContainer>
-        <SectionContainer id="about"><About /></SectionContainer>
-        <SectionContainer id="career"><Career /></SectionContainer>
-        <SectionContainer id="project"><Project /></SectionContainer>
-        <SectionContainer id="contact"><Contact /></SectionContainer>
-      </BodyContainer>
-      <FooterContainer><Footer /></FooterContainer>
-    </AppContainer>
+      <AppContainer>
+        <GlobalStyle />
+        <HeaderContainer isScrolled={isScrolled}><Header isScrolled={isScrolled} /></HeaderContainer>
+        <SiderLeftContainer><SiderLeft /></SiderLeftContainer>
+        <SiderRightContainer><SiderRight /></SiderRightContainer>
+        <BodyContainer>
+          <SectionContainer><Intro /></SectionContainer>
+          <SectionContainer id="about"><About /></SectionContainer>
+          <SectionContainer id="career"><Career /></SectionContainer>
+          <SectionContainer id="project"><Project /></SectionContainer>
+          <SectionContainer id="contact"><Contact /></SectionContainer>
+        </BodyContainer>
+        <FooterContainer><Footer /></FooterContainer>
+      </AppContainer>
   )
 }
 export default App;

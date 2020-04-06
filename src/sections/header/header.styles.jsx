@@ -24,4 +24,5 @@ export const MenuContainer = styled.div`
 
 export const Menu = styled.a`
     padding: 10px;
+    transition: color .2s ease-in-out;  
 `
