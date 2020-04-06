@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link, animateScroll as scroll } from "react-scroll"
 import { MainColor } from '../../global.styles';
 
 export const HeaderContainer = styled.div`
@@ -22,7 +23,7 @@ export const MenuContainer = styled.div`
     flex-direction: row;
 `
 
-export const Menu = styled.a`
+export const Menu = styled(Link)`
     padding: 10px;
-    transition: color .2s ease-in-out;  
+    cursor: pointer;
 `

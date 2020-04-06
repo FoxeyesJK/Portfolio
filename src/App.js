@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Route } from "react-router-dom"
+import { Element } from 'react-scroll'
 
 import { GlobalStyle } from './global.styles'
 import {
@@ -58,6 +59,7 @@ const App = () => {
         <HeaderContainer isScrolled={isScrolled}><Header isScrolled={isScrolled} /></HeaderContainer>
         <SiderLeftContainer><SiderLeft /></SiderLeftContainer>
         <SiderRightContainer><SiderRight /></SiderRightContainer>
+
         <BodyContainer>
           <SectionContainer><Intro /></SectionContainer>
           <SectionContainer id="about"><About /></SectionContainer>
@@ -65,6 +67,11 @@ const App = () => {
           <SectionContainer id="project"><Project /></SectionContainer>
           <SectionContainer id="contact"><Contact /></SectionContainer>
         </BodyContainer>
+        <React.Fragment>
+        <Element id='section1' name='example-destination'>
+          <div style={{ position: `absolute` }}>Hello</div>
+      </Element>
+      </React.Fragment>
         <FooterContainer><Footer /></FooterContainer>
       </AppContainer>
   )

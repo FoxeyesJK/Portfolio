@@ -7,10 +7,11 @@ import {
     TextContainer,
     DescriptionContainer,
     Description,
-    ListOuterContainer,
-    ListContainer,
+    ListFullContainer,
+    ListHalfContainer,
     List,
-    ImageContainer
+    ImageContainer,
+    Image
 } from './about.styles'
 
 const About = () => {
@@ -24,21 +25,21 @@ const About = () => {
                     <Description>Shortly after graduating from Stony Brook University, I joined the engineering team at Upstatement where I work on a wide variety of interesting and meaningful projects on a daily basis.</Description>
                     <Description>Here are a few technologies I've been working with recently:</Description>
                 </DescriptionContainer>
-                <ListOuterContainer>
-                    <ListContainer>
+                <ListFullContainer>
+                    <ListHalfContainer>
                         <List>Javascript (ES6+)</List>
                         <List>React</List>
                         <List>Redux</List>
                         <List>HTML & (S)CSS</List>
-                    </ListContainer>
-                    <ListContainer>
+                    </ListHalfContainer>
+                    <ListHalfContainer>
                         <List>C#</List>
                         <List>.NET MVC</List>
-                    </ListContainer>
-                </ListOuterContainer>
+                    </ListHalfContainer>
+                </ListFullContainer>
             </TextContainer>
             <ImageContainer>
-
+                <Image />
             </ImageContainer>
             </ContentsContainer>
         </AboutContainer>

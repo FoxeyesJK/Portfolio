@@ -20,6 +20,20 @@ export const HeaderStyles = css`
     }
 `
 
+export const ListStyles = css`
+    display: list-item;
+    position: relative;
+    padding-left: 30px;
+    list-style: none;
+    &::before {
+        content: "▹";
+        position: absolute;
+        color: white;
+        left: 0px;
+    }
+`
+
+
 export const GlobalStyle = createGlobalStyle`
     body {
         background-color: ${MainColor};
