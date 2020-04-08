@@ -18,7 +18,7 @@ import {
 
 const Career = () => {
     const [activeTabId, setActiveTabId] = useState(1);
-    const [collections] = useState(CAREER_DATA);
+    const [careers] = useState(CAREER_DATA);
 
     return (
         <CareerContainer>
@@ -26,19 +26,19 @@ const Career = () => {
             <ContentsContainer>
             <ListContainer>
                 <TabActiveBar activeTabId={activeTabId} />
-                {collections.map(collection => (
-                    <TabContainer key={collection.id}>
-                        <TabButton onClick={() => setActiveTabId(collection.id)}>{collection.company}</TabButton>
+                {careers.map(career => (
+                    <TabContainer key={career.id}>
+                        <TabButton onClick={() => setActiveTabId(career.id)}>{career.company}</TabButton>
                     </TabContainer>
                 ))}
             </ListContainer>
-            {collections.filter(collection => collection.id === activeTabId)
-                            .map(collection => (
+            {careers.filter(career=> career.id === activeTabId)
+                            .map(career => (
                     <DetailContainer>
-                        <DetailHeader>{collection.title} @ {collection.company}</DetailHeader>
-                        <DetailSubHeader>{collection.period}</DetailSubHeader>
+                        <DetailHeader>{career.title} @ {career.company}</DetailHeader>
+                        <DetailSubHeader>{career.period}</DetailSubHeader>
                         <DetailDescriptions>
-                        {collection.descriptions.map(description => <Description key={description.id}>{description.content}</Description>)}
+                        {career.descriptions.map(description => <Description key={description.id}>{description.content}</Description>)}
                         </DetailDescriptions>
                     </DetailContainer>
                 ))}
