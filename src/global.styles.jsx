@@ -24,7 +24,6 @@ export const ListStyles = css`
     display: list-item;
     position: relative;
     padding-left: 30px;
-    list-style: none;
     &::before {
         content: "▹";
         position: absolute;

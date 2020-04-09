@@ -17,6 +17,16 @@ const PROJECT_DATA = [
           id: 3,
           name: '.net core'
         }
+      ],
+      icons: [
+        {
+          id: 1,
+          type: 'github'
+        },
+        {
+          id: 2,
+          type: 'LinkedIn'
+        }
       ]
     },
     {
@@ -37,6 +47,16 @@ const PROJECT_DATA = [
           id: 3,
           name: '.net core'
         }
+      ],
+      icons: [
+        {
+          id: 1,
+          type: 'github'
+        },
+        {
+          id: 2,
+          type: 'LinkedIn'
+        }
       ]
     },
     {
@@ -56,6 +76,16 @@ const PROJECT_DATA = [
         {
           id: 3,
           name: '.net core'
+        }
+      ],
+      icons: [
+        {
+          id: 1,
+          type: 'github'
+        },
+        {
+          id: 2,
+          type: 'LinkedIn'
         }
       ]
     }

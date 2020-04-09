@@ -14,13 +14,10 @@ export const ContentsContainer = styled.div`
 `
 
 export const ListContainer = styled.ul`
-    padding: 0;
     margin: 0;
 `
 
 export const TabContainer = styled.li`
-    list-style: none;
-    //padding: 0 10px;
 `
 
 export const TabButton = styled.button`
