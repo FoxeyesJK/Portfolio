@@ -3,11 +3,12 @@ import React from 'react'
 import { 
     HeaderContainer,
     LogoContainer,
+    StyledLogoIcon,
     MenuContainer,
     Menu
 } from './header.styles'
 
-import { ReactComponent as LogoIcon } from '../../assets/icon-logo.svg'
+import { ReactComponent as LogoIcon } from '../../assets/icon-cute.svg'
 import CustomLink from '../../components/custom-link/custom-link.components'
 
 
@@ -16,7 +17,7 @@ const Header = ({isScrolled}) => {
     return (
     <HeaderContainer isScrolled={isScrolled}>
         <LogoContainer>
-            <LogoIcon />
+            <StyledLogoIcon />
         </LogoContainer>
         <MenuContainer>
         <Menu
@@ -51,10 +52,11 @@ const Header = ({isScrolled}) => {
             offset={-70}
             duration= {500}
         >Contact</Menu>
-            <CustomLink isHeader>Resume</CustomLink>
         </MenuContainer>
     </HeaderContainer>
     )    
 }
 
 export default Header
+
+//<CustomLink isHeader>Resume</CustomLink>

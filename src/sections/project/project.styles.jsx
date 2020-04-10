@@ -1,10 +1,12 @@
 import styled from 'styled-components'
-import { HeaderStyles } from '../../global.styles';
+import { SectionStyles, HeaderStyles } from '../../global.styles';
 import imageSportify from '../../assets/project-sportify.png'
 
 export const ProjectContainer = styled.div`
-    width: 100%;
+    width; 100%;
+
 `
+
 
 export const ProjectHeader = styled.div`
     ${HeaderStyles}
@@ -14,52 +16,65 @@ export const ContentsContainer = styled.div`
 
 `
 
+export const DetailContainer = styled.div`
+    height: 100vh;
+    padding: 100px;
+    background-color: ${props => props.backgroundColor};
+    color: #fff;
+`
+
 export const ImageContainer = styled.div`
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 430px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
 `
 
 export const ProjectImage = styled.div`
     background-image: url(${imageSportify});
-    position: relative;
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
     height: 100%;
 `
 
-export const DetailContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid white;
-`
-
 export const DetailContentsContainer = styled.div`
-    text-align: right;
-`
-
-export const Type = styled.div`
-    font-size: 13px;
-    margin: 10px 0;
+    text-align: center;
+    margin: 40px 0;
 `
 
 export const Title = styled.div`
-    font-size: 28px;
-    margin: 20px 0;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Roboto;
+    //text-transform: uppercase;
+    margin: 5px;
+`
+
+export const Type = styled.div`
+    font-size: 20px;
+    font-family: Roboto;
 `
 
 export const Description = styled.div`
-    font-size: 18px;
-    max-width: 400px;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Roboto;
 `
 
 export const StacksContainer = styled.ul`
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 `
 
 export const Stack = styled.li`
-    padding: 10px;
+    padding: 0 10px;
+    font-family: Courier New;
 `
 
 export const IconsContainer = styled.ul`
@@ -70,3 +85,4 @@ export const IconsContainer = styled.ul`
 export const Icon = styled.li`
 
 `
+

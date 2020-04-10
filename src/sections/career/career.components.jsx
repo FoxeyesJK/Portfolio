@@ -22,7 +22,7 @@ const Career = () => {
 
     return (
         <CareerContainer>
-            <CareerHeader>Where I've Worked</CareerHeader>
+            <CareerHeader>Where I've Worked.</CareerHeader>
             <ContentsContainer>
             <ListContainer>
                 <TabActiveBar activeTabId={activeTabId} />

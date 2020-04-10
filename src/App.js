@@ -44,6 +44,7 @@ const App = () => {
   const handleScroll = () => {
     console.log('scrolled')
     const top = window.scrollY;
+    console.log(top)
 
     if(top > 1) {
       setIsScrolled(true)
@@ -57,8 +58,6 @@ const App = () => {
       <AppContainer>
         <GlobalStyle />
         <HeaderContainer isScrolled={isScrolled}><Header isScrolled={isScrolled} /></HeaderContainer>
-        <SiderLeftContainer><SiderLeft /></SiderLeftContainer>
-        <SiderRightContainer><SiderRight /></SiderRightContainer>
 
         <BodyContainer>
           <SectionContainer><Intro /></SectionContainer>
@@ -77,3 +76,6 @@ const App = () => {
   )
 }
 export default App;
+
+//<SiderLeftContainer><SiderLeft /></SiderLeftContainer>
+//<SiderRightContainer><SiderRight /></SiderRightContainer>

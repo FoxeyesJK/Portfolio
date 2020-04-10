@@ -1,15 +1,17 @@
 import styled from 'styled-components'
+import { SectionStyles } from '../../global.styles';
 
 export const IntroContainer = styled.div`
-    margin: auto;
+    ${SectionStyles}
 `
 
 export const Header1 = styled.div`
-    font-size: 16px;
+    font-size: 30px;
+    font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 `
 
 export const Header2 = styled.div`
-    font-size: 80px;
+    font-size: 20px;
 `
 
 export const Header3 = styled.div`

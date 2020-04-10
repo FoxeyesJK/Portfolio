@@ -1,14 +1,14 @@
 import styled from 'styled-components'
-import { HeaderStyles, ListStyles } from '../../global.styles';
+import { SectionStyles, HeaderStyles, ListStyles } from '../../global.styles';
 
 import profileImage from '../../assets/profile.jpg'
 
 export const AboutContainer = styled.div`
-    width: 100%;
+    ${SectionStyles};
 `
 
 export const AboutHeader = styled.div`
-    ${HeaderStyles}
+    ${HeaderStyles};
 `
 
 export const ContentsContainer = styled.div`

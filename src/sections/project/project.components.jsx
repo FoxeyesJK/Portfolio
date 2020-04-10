@@ -23,26 +23,25 @@ const Project = () => {
 
     return (
         <ProjectContainer>
-            <ProjectHeader>Things I've Built</ProjectHeader>
             <ContentsContainer>
             {
                 projects.map(project => 
-                    <DetailContainer>
-                        <ImageContainer><ProjectImage /></ImageContainer>
+                    <DetailContainer backgroundColor={project.backgroundColor}>
+                        <div><ImageContainer><ProjectImage /></ImageContainer></div>
                         <DetailContentsContainer>
-                        <Type>{project.type}</Type>
-                        <Title>{project.name}</Title>
-                        <Description>{project.description}</Description>
-                        <StacksContainer>
-                        {
-                            project.stacks.map(stack => <Stack>{stack.name}</Stack>)
-                        }
-                        </StacksContainer>
-                        <IconsContainer>
-                        {
-                            project.icons.map(icon => <Icon iconType={icon.type} />)
-                        }
-                        </IconsContainer>
+                            <Title>{project.name}</Title>
+                            <Type>{project.title}</Type>
+                            <Description>{project.description}</Description>
+                            <StacksContainer>
+                            {
+                                project.stacks.map(stack => <Stack>{stack.name}</Stack>)
+                            }
+                            </StacksContainer>
+                            <IconsContainer>
+                            {
+                                project.icons.map(icon => <Icon iconType={icon.type} />)
+                            }
+                            </IconsContainer>
                         </DetailContentsContainer>
                     </DetailContainer>
                     )

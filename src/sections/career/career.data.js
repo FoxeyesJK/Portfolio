@@ -1,7 +1,7 @@
 const CAREER_DATA = [
     {
       id: 1,
-      company: 'FCManager',
+      company: 'Sportify',
       title: 'Freelance',
       period: 'December 2020 - Present',
       descriptions: [

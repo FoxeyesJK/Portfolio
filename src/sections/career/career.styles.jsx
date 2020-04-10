@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { HeaderStyles, ListStyles } from '../../global.styles';
+import { SectionStyles, HeaderStyles, ListStyles, SubColor, TextColor } from '../../global.styles';
 
 export const CareerContainer = styled.div`
-
+    ${SectionStyles}
 `
 
 export const CareerHeader = styled.div`
@@ -23,20 +23,20 @@ export const TabContainer = styled.li`
 export const TabButton = styled.button`
     width: 130px;
     background-color: inherit;
-    color: white;
+    color: ${TextColor};
     cursor: pointer;
     border: 0;
-    border-left: 2px solid white;
+    border-left: 2px solid ${TextColor};
     padding: 20px;
     text-align: left;
     outline: none;
-
+    font-family: Arial;
 `
 
 export const TabActiveBar = styled.span`
     position: absolute;
     height: 55px;
-    border-left: 2px solid red;
+    border-left: 2px solid ${SubColor};
     transition: all 0.25s cubic-bezier(0.7, 0.045, 0.3, 1) 0s;
     transform: translateY(
         ${props => props.activeTabId > 0 ? (props.activeTabId - 1) * 55 : 0}px
@@ -44,7 +44,7 @@ export const TabActiveBar = styled.span`
 `
 
 export const DetailContainer = styled.div`
-
+    font-family: Times//Comic Sans MS;
 `
 
 export const DetailHeader = styled.div`
