@@ -7,6 +7,7 @@ import {
     ContentsContainer,
     DetailContainer,
     ImageContainer,
+    ProjectImage,
     DetailContentsContainer,
     Type,
     Title,
@@ -27,7 +28,7 @@ const Project = () => {
             {
                 projects.map(project => 
                     <DetailContainer>
-                        <ImageContainer></ImageContainer>
+                        <ImageContainer><ProjectImage /></ImageContainer>
                         <DetailContentsContainer>
                         <Type>{project.type}</Type>
                         <Title>{project.name}</Title>

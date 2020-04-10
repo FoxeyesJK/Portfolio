@@ -3,7 +3,8 @@ const PROJECT_DATA = [
       id: 1,
       type: 'Featured Project',
       name: 'FCManager',
-      description: 'Freelance',
+      description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
+      image: 'sportify',
       stacks: [
         {
           id: 1,
@@ -33,7 +34,8 @@ const PROJECT_DATA = [
       id: 2,
       type: 'Featured Project',
       name: 'FCManager',
-      description: 'Freelance',
+      description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
+      image: 'sportify',
       stacks: [
         {
           id: 1,
@@ -63,7 +65,8 @@ const PROJECT_DATA = [
       id: 3,
       type: 'Featured Project',
       name: 'FCManager',
-      description: 'Freelance',
+      description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
+      image: 'sportify',
       stacks: [
         {
           id: 1,
