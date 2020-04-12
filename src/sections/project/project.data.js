@@ -5,7 +5,7 @@ const PROJECT_DATA = [
       name: 'Sportify',
       description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
       image: 'sportify',
-      backgroundColor: '#7dcc93',
+      backgroundColor: '#96e9ad',//
       stacks: [
         {
           id: 1,
@@ -37,7 +37,7 @@ const PROJECT_DATA = [
       name: 'FCManager',
       description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
       image: 'sportify',
-      backgroundColor: '#f76160',
+      backgroundColor: '#ff8080',
       stacks: [
         {
           id: 1,
@@ -69,7 +69,7 @@ const PROJECT_DATA = [
       name: 'FCManager',
       description: 'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.',
       image: 'sportify',
-      backgroundColor: '#31355b',
+      backgroundColor: '#001a4d',//'#31355b',
       stacks: [
         {
           id: 1,

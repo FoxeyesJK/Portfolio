@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link, animateScroll as scroll } from "react-scroll"
-import { MainColor } from '../../global.styles';
+import { MainColor, SubColor } from '../../global.styles';
 import { ReactComponent as LogoIcon } from '../../assets/icon-boy.svg'
 
 export const HeaderContainer = styled.div`
@@ -32,4 +32,5 @@ export const MenuContainer = styled.div`
 export const Menu = styled(Link)`
     padding: 10px;
     cursor: pointer;
+    font-size: 20px;
 `

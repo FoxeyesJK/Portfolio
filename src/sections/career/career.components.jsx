@@ -3,6 +3,7 @@ import CAREER_DATA from './career.data'
 
 import {
     CareerContainer,
+    CareerInnerContainer,
     CareerHeader,
     ContentsContainer,
     ListContainer,
@@ -22,27 +23,29 @@ const Career = () => {
 
     return (
         <CareerContainer>
-            <CareerHeader>Where I've Worked.</CareerHeader>
-            <ContentsContainer>
-            <ListContainer>
-                <TabActiveBar activeTabId={activeTabId} />
-                {careers.map(career => (
-                    <TabContainer key={career.id}>
-                        <TabButton onClick={() => setActiveTabId(career.id)}>{career.company}</TabButton>
-                    </TabContainer>
-                ))}
-            </ListContainer>
-            {careers.filter(career=> career.id === activeTabId)
-                            .map(career => (
-                    <DetailContainer>
-                        <DetailHeader>{career.title} @ {career.company}</DetailHeader>
-                        <DetailSubHeader>{career.period}</DetailSubHeader>
-                        <DetailDescriptions>
-                        {career.descriptions.map(description => <Description key={description.id}>{description.content}</Description>)}
-                        </DetailDescriptions>
-                    </DetailContainer>
-                ))}
-            </ContentsContainer>
+            <CareerInnerContainer>
+                <CareerHeader>Where I've Worked.</CareerHeader>
+                <ContentsContainer>
+                <ListContainer>
+                    <TabActiveBar activeTabId={activeTabId} />
+                    {careers.map(career => (
+                        <TabContainer key={career.id}>
+                            <TabButton onClick={() => setActiveTabId(career.id)}>{career.company}</TabButton>
+                        </TabContainer>
+                    ))}
+                </ListContainer>
+                {careers.filter(career=> career.id === activeTabId)
+                                .map(career => (
+                        <DetailContainer>
+                            <DetailHeader>{career.title} @ {career.company}</DetailHeader>
+                            <DetailSubHeader>{career.period}</DetailSubHeader>
+                            <DetailDescriptions>
+                            {career.descriptions.map(description => <Description key={description.id}>{description.content}</Description>)}
+                            </DetailDescriptions>
+                        </DetailContainer>
+                    ))}
+                </ContentsContainer>
+            </CareerInnerContainer>
         </CareerContainer>
     )
 }

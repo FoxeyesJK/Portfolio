@@ -1,14 +1,18 @@
 import styled from 'styled-components'
-import { SectionStyles, HeaderStyles, ListStyles } from '../../global.styles';
+import { SectionStyles, HeaderStyles, ListStyles, SubColor, RedColor } from '../../global.styles';
 
-import profileImage from '../../assets/profile.jpg'
+import profileImage from '../../assets/icon-boy.png'
 
 export const AboutContainer = styled.div`
     ${SectionStyles};
+    max-width: 1000px;
 `
 
-export const AboutHeader = styled.div`
+export const AboutHeader = styled.h1`
     ${HeaderStyles};
+    text-align: left;
+    padding: 0px;
+    margin: 0;
 `
 
 export const ContentsContainer = styled.div`
@@ -18,7 +22,10 @@ export const ContentsContainer = styled.div`
 `
 
 export const TextContainer = styled.div`
-    max-width: 480px;
+    max-width: 580px;
+`
+
+export const TextInnerContainer = styled.div`
 `
 
 export const DescriptionContainer = styled.div`
@@ -26,7 +33,12 @@ export const DescriptionContainer = styled.div`
 `
 
 export const Description = styled.p`
-
+    font-size: 18px;
+    padding: 0 20px;
+    
+    &:first-child {
+        border-left: 3px solid ${RedColor}
+    }
 `
 
 export const ListFullContainer = styled.div`
@@ -35,10 +47,13 @@ export const ListFullContainer = styled.div`
 
 export const ListHalfContainer = styled.ul`
     width: 50%;
+    padding: 0 20px;
 `
 
 export const List = styled.li`
     ${ListStyles}
+    position: relative;
+    font-family: Courier New;
 `
 
 export const ImageContainer = styled.div`
@@ -49,7 +64,7 @@ export const ImageContainer = styled.div`
         margin: 20px 0 0 20px;
         content: "";
         z-index: -1;
-        border: 2px solid rgb(100, 255, 218);;
+        border: 2px solid ${SubColor};
         border-image: initial;
         display: block;
         position: absolute;
@@ -74,4 +89,5 @@ export const Image = styled.img`
     background-image: url(${profileImage});
     background-size: cover;
     border-radius: 3px;
+    border: none;
 `

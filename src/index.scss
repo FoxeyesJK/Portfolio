@@ -22,6 +22,19 @@ ul {
     padding: 0;
 }
 
+div {
+    font-family: Arial;
+    //Roboto
+}
+
+p {
+    font-family: Arial;
+}
+
+h1, h2, h3, a {
+    font-family: Arial;
+}
+
 @keyframes fadeIn {
     0% {
       opacity:0;

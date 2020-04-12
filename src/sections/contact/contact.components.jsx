@@ -11,8 +11,8 @@ const Contact = () => {
     return (
         <ContactContainer>
             <ContactHeader>What's Next?</ContactHeader>
-            <ContactSubHeader>Get In Touch</ContactSubHeader>
-            <ContentsContainer>I'm not looking for freelance opportunities, my inbox is always open. Whether for a potential project or just to say hi, I'll try my best to answer your email!</ContentsContainer>
+            <ContactSubHeader>I'm currently seeking for a new opportunity.</ContactSubHeader>
+            <ContentsContainer>Whether for a potential project or just fancy saying hi, then get in touch.</ContentsContainer>
         </ContactContainer>
     )
 }

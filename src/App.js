@@ -66,11 +66,6 @@ const App = () => {
           <SectionContainer id="project"><Project /></SectionContainer>
           <SectionContainer id="contact"><Contact /></SectionContainer>
         </BodyContainer>
-        <React.Fragment>
-        <Element id='section1' name='example-destination'>
-          <div style={{ position: `absolute` }}>Hello</div>
-      </Element>
-      </React.Fragment>
         <FooterContainer><Footer /></FooterContainer>
       </AppContainer>
   )

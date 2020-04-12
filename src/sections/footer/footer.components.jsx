@@ -8,7 +8,7 @@ import {
 const Footer = () => {
     return (
       <FooterContainer>
-        <Credential>Developed by Jake Kwon</Credential>
+        <Credential>© 2020 Jake Kwon. All rights reserved.</Credential>
      </FooterContainer>
     )
 }
