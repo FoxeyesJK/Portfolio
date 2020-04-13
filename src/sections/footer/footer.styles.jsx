@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { SubColor } from '../../global.styles';
 
 export const FooterContainer = styled.div`
     text-align: center;

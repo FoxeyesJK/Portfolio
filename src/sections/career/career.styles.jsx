@@ -3,6 +3,7 @@ import { SectionStyles, HeaderStyles, ListStyles, SubColor, RedColor, GreyColor,
 
 export const CareerContainer = styled.div`
     ${SectionStyles}
+    height: 90vh;
 `
 
 export const CareerInnerContainer = styled.div`
@@ -23,6 +24,11 @@ export const CareerInnerContainer = styled.div`
         height: 400px;
         border-radius: 3px;
         transition: 0.3s;
+
+
+        @media screen and (max-width: 1000px) {
+            max-width: 80%;
+        }
     }
 
     &:hover {
@@ -31,6 +37,10 @@ export const CareerInnerContainer = styled.div`
             transition: 0.3s;
         }
     }
+
+    @media screen and (max-width: 1000px) {
+        max-width: 80%;
+    }
 `
 
 
@@ -38,7 +48,13 @@ export const CareerHeader = styled.h1`
     ${HeaderStyles}
     text-align: left;
     max-width: 700px;  
+    height: auto;
     margin: 40px auto 20px auto;
+
+    @media screen and (max-width: 1000px) {
+        text-align: center;
+        margin; 0 auto;
+    }
 `
 
 export const ContentsContainer = styled.div`
@@ -46,11 +62,21 @@ export const ContentsContainer = styled.div`
     max-width: 700px;
     height: 100%;
     margin: auto;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+    }
 `
 
 export const ListContainer = styled.ul`
     margin: 0;
     padding: 30px 0;
+
+    @media screen and (max-width: 1000px) {
+        display: flex;
+        padding: 0;
+        margin: 0 auto;
+    }
 `
 
 export const TabContainer = styled.li`
@@ -67,6 +93,14 @@ export const TabButton = styled.button`
     text-align: left;
     outline: none;
     font-family: Arial;
+
+    @media screen and (max-width: 1000px) {
+        width: 90px;
+        border-left: 0;
+        text-align: center;
+        padding: 5px;
+        border-bottom: 2px solid ${GreyColor};
+    }
 `
 
 export const TabActiveBar = styled.span`
@@ -77,15 +111,37 @@ export const TabActiveBar = styled.span`
     transform: translateY(
         ${props => props.activeTabId > 0 ? (props.activeTabId - 1) * 55 : 0}px
     );
+
+    @media screen and (max-width: 1000px) {
+        border-left: 0;
+        width: 90px;
+        height: 27px;
+        border-bottom: 2px solid ${RedColor};
+        transition: all 0.25s cubic-bezier(0.7, 0.045, 0.3, 1) 0s;
+        transform: translateX(
+            ${props => props.activeTabId > 0 ? (props.activeTabId - 1) * 130 : 0}px
+        );
+    }
+
 `
 
 export const DetailContainer = styled.div`
-
+    @media screen and (max-width: 1000px) {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
 `
 
 export const DetailHeader = styled.div`
     font-size: 22px;
     padding: 10px 0;
+
+    @media screen and (max-width: 1000px) {
+        border-left: 0;
+        text-align: center;
+        font-size: 20px;
+    }
 `
 
 export const DetailSubHeader = styled.div`
@@ -99,5 +155,10 @@ export const DetailDescriptions = styled.ul`
 
 export const Description = styled.li`
     margin: 10px 0;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 13px;
+        ${ListStyles};
+    }
 `
 

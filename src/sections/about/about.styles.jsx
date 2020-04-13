@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { SectionStyles, HeaderStyles, ListStyles, SubColor, RedColor } from '../../global.styles';
+import { SectionStyles, HeaderStyles, ListStyles, SubColor, RedColor, GreyColor } from '../../global.styles';
 
 import profileImage from '../../assets/icon-boy.png'
 
@@ -19,17 +19,22 @@ export const ContentsContainer = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        padding: 20px;
+    }
 `
 
 export const TextContainer = styled.div`
     max-width: 580px;
+    margin: auto;
 `
 
 export const TextInnerContainer = styled.div`
 `
 
 export const DescriptionContainer = styled.div`
-
 `
 
 export const Description = styled.p`
@@ -52,14 +57,14 @@ export const ListHalfContainer = styled.ul`
 
 export const List = styled.li`
     ${ListStyles}
-    position: relative;
     font-family: Courier New;
 `
 
 export const ImageContainer = styled.div`
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 3px;
+
     &::before {
         margin: 20px 0 0 20px;
         content: "";
@@ -72,22 +77,33 @@ export const ImageContainer = styled.div`
         height: 300px;
         border-radius: 3px;
         transition: 0.3s;
-    }
 
+        @media screen and (max-width: 1000px) {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    
     &:hover {
         &::before {
             margin: 15px 0 0 15px;
             transition: 0.3s;
         }
     }
+
+    @media screen and (max-width: 1000px) {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 50px auto;
+    }
 `
 
 export const Image = styled.img`
     display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url(${profileImage});
-    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    // background-image: url(${profileImage});
+    // background-size: cover;
     border-radius: 3px;
-    border: none;
+    border: 1px solid ${GreyColor};
 `

@@ -10,6 +10,10 @@ export const TopContainer = styled.div`
     height: 35vh;
     background-color: ${MintColor}; 
     padding: 0 300px;
+
+    @media screen and (max-width: 1000px) {
+        padding: 0 70px;
+    }
 `
 
 export const BottomContainer = styled.div`
@@ -19,7 +23,17 @@ export const BottomContainer = styled.div`
 export const HeaderContainer = styled.div`
     display: flex;
     font-size: 200px;
-    padding-top: 18vh;
+    padding-top: 20vh;
+
+    @media screen and (max-width: 1000px) {
+        padding-top: 24vh;
+        font-size: 140px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-top: 27vh;
+        font-size: 100px;
+    }
 `
 
 
@@ -48,6 +62,10 @@ export const SubHeaderContainer = styled.div`
         height: 3px;
         background-color: ${RedColor};
         margin: auto -30px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        padding: 0;
     }
 `
 

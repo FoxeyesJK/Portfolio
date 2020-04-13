@@ -1,21 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import { Route } from "react-router-dom"
-import { Element } from 'react-scroll'
 
 import { GlobalStyle } from './global.styles'
 import {
   AppContainer,
   BodyContainer,
   HeaderContainer,
-  SiderLeftContainer,
-  SiderRightContainer,
   SectionContainer,
   FooterContainer
 } from './App.styles'
 
 import Header from './sections/header/header.components'
-import SiderLeft from './sections/sider-left/sider-left.components'
-import SiderRight from './sections/sider-right/sider-right.components'
 import Intro from './sections/intro/intro.components'
 import About from './sections/about/about.components'
 import Career from './sections/career/career.components'

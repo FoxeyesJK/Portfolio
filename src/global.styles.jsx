@@ -25,10 +25,9 @@ export const SubHeaderStyles = css`
 
 export const ListStyles = css`
     display: list-item;
-    padding-left: 30px;
     &::before {
         content: "▹";
-        position: absolute;
+        padding-right: 10px;
         color: ${SubColor};
         left: 0px;
     }
@@ -61,10 +60,5 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
-    a:hover {
-        color: ${SubDarkerColor};
-        border-bottom: 3px solid ${RedColor};
-        transition: 0.3s;
-    }
 `
 

@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import PROJECT_DATA from './project.data'
+import imageIottie from '../../assets/project-iottie.png'
+import imagePortfolio from '../../assets/project-portfolio.png'
+import imageSportify from '../../assets/project-sportify.png'
+
 
 import {
     ProjectContainer,
-    ProjectHeader,
     ContentsContainer,
     DetailContainer,
     ImageContainer,
+    ImageLink,
     ProjectImage,
     DetailContentsContainer,
     Type,
@@ -21,13 +25,30 @@ import {
 const Project = () => {
     const [projects] = useState(PROJECT_DATA);
 
+    const handleImage = (project) => {
+        switch(project) {
+        case 'iOttie':
+            return imageIottie;
+        case 'Sportify':
+            return imageSportify;
+        case 'Portfolio':
+            return imagePortfolio;
+          default:
+            return '';
+        }
+      }
+
     return (
         <ProjectContainer>
             <ContentsContainer>
             {
                 projects.map(project => 
                     <DetailContainer backgroundColor={project.backgroundColor}>
-                        <div><ImageContainer><ProjectImage /></ImageContainer></div>
+                        <ImageContainer>
+                            <ImageLink href={project.link} target="_blank">
+                                <ProjectImage src={handleImage(project.name)} />
+                            </ImageLink>
+                        </ImageContainer>
                         <DetailContentsContainer>
                             <Title>{project.name}</Title>
                             <Type>{project.title}</Type>

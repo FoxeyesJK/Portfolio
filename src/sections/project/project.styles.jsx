@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { SectionStyles, HeaderStyles } from '../../global.styles';
-import imageSportify from '../../assets/project-sportify.png'
+import { HeaderStyles } from '../../global.styles';
 
 export const ProjectContainer = styled.div`
     width: 100%;
@@ -20,25 +19,39 @@ export const DetailContainer = styled.div`
     padding: 100px;
     background-color: ${props => props.backgroundColor};
     color: #fff;
+
+    @media screen and (max-width: 1000px) {
+        padding: 50px;
+    }
 `
 
 export const ImageContainer = styled.div`
-    width: 800px;
-    height: 430px;
+    max-width: 700px;
+    //height: 430px;
     margin: auto;
     background-color: white;
     padding: 40px;
     border-radius: 15px;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1); 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+    &:hover {
+        border: none;
+    }
 `
 
-export const ProjectImage = styled.div`
-    background-image: url(${imageSportify});
-    background-repeat: no-repeat;
-    background-size: contain;
-    overflow: hidden;
-    height: 100%;
+export const ImageLink = styled.a`
+    &:hover {
+        border: none;
+    }
+`
+
+export const ProjectImage = styled.img`
+    max-width: 100%;
+    height: auto;
+
+    &:hover {
+        border: none;
+    }
 `
 
 export const DetailContentsContainer = styled.div`

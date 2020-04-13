@@ -8,14 +8,9 @@ import {
     SubHeaderContainer,
     Header1,
     Header2,
-    Header3,
     SubHeader1,
     SubHeader2,
-    Contents,
-    CustomLinkContainer
 } from './intro.styles'
-
-import CustomLink from '../../components/custom-link/custom-link.components'
 
 const Intro = () => {
     return (
