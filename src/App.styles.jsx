@@ -52,3 +52,8 @@ export const SectionContainer = styled.section`
 export const FooterContainer = styled.footer`
 
 `;
+
+export const Title = styled.title`
+  
+`;
+

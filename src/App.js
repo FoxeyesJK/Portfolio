@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import { GlobalStyle } from './global.styles'
+
 import {
   AppContainer,
   BodyContainer,
@@ -52,7 +53,6 @@ const App = () => {
       <AppContainer>
         <GlobalStyle />
         <HeaderContainer isScrolled={isScrolled}><Header isScrolled={isScrolled} /></HeaderContainer>
-
         <BodyContainer>
           <SectionContainer><Intro /></SectionContainer>
           <SectionContainer id="about"><About /></SectionContainer>

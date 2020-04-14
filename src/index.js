@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Helmet } from 'react-helmet';
+
 import './index.scss';
 
 ReactDOM.render(
   <BrowserRouter>
+    <Helmet>
+      <title>Jake Kwon | Software Engineer</title>
+    </Helmet>
   <React.StrictMode>
     <App />
   </React.StrictMode>
