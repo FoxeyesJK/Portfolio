@@ -1,5 +1,5 @@
 
-![icon-boy](https://user-images.githubusercontent.com/25089799/79623401-17e7ef00-80ea-11ea-8e69-c422b3e98879.png)
+<img align="center" width="100" height="100" src="https://user-images.githubusercontent.com/25089799/79623401-17e7ef00-80ea-11ea-8e69-c422b3e98879.png">
 
 <a href="http://www.jakekwon.life"><h1 align="center">jakekwon.life</h2></a>
 
