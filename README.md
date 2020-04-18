@@ -1,6 +1,6 @@
 
 
-<h1 align="center">[jakekwon.life](http://www.jakekwon.life)</h2>
+<a href="http://www.jakekwon.life"><h1 align="center">jakekwon.life</h2></a>
 
 <p align="center">Buit with React and styled-components</>
 
