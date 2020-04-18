@@ -1,5 +1,7 @@
 
-<img align="center" width="75" height="75" src="https://user-images.githubusercontent.com/25089799/79623401-17e7ef00-80ea-11ea-8e69-c422b3e98879.png">
+<p align="center">
+  <img width="75" height="75" src="https://user-images.githubusercontent.com/25089799/79623401-17e7ef00-80ea-11ea-8e69-c422b3e98879.png">
+</p>
 
 <a href="http://www.jakekwon.life"><h1 align="center">jakekwon.life</h2></a>
 
