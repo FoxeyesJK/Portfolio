@@ -3,7 +3,7 @@ const CAREER_DATA = [
       id: 1,
       company: 'Sportify',
       title: 'Freelance',
-      period: 'December 2020 - Present',
+      period: 'December 2019 - Present',
       descriptions: [
         {
             id: 1,

@@ -19,7 +19,8 @@ import {
     StacksContainer,
     Stack,
     IconsContainer,
-    Icon
+    Link,
+    GithubStyledIcon
 } from './project.styles'
 
 const Project = () => {
@@ -57,12 +58,10 @@ const Project = () => {
                             {
                                 project.stacks.map(stack => <Stack>{stack.name}</Stack>)
                             }
-                            </StacksContainer>
-                            <IconsContainer>
                             {
-                                project.icons.map(icon => <Icon iconType={icon.type} />)
+                                !!project.icons ? project.icons.map(icon => <Link href={icon.link}><GithubStyledIcon /></Link>) : ""
                             }
-                            </IconsContainer>
+                            </StacksContainer>
                         </DetailContentsContainer>
                     </DetailContainer>
                     )

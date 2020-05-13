@@ -25,11 +25,7 @@ const PROJECT_DATA = [
       icons: [
         {
           id: 1,
-          type: 'github'
-        },
-        {
-          id: 2,
-          type: 'LinkedIn'
+          link: 'https://github.com/FoxeyesJK/fcmanager-frontend'
         }
       ]
     },
@@ -57,11 +53,7 @@ const PROJECT_DATA = [
       icons: [
         {
           id: 1,
-          type: 'github'
-        },
-        {
-          id: 2,
-          type: 'LinkedIn'
+          link: 'https://github.com/FoxeyesJK/portfolio'
         }
       ]
     },
@@ -84,16 +76,6 @@ const PROJECT_DATA = [
         {
           id: 3,
           name: 'jQuery'
-        }
-      ],
-      icons: [
-        {
-          id: 1,
-          type: 'github'
-        },
-        {
-          id: 2,
-          type: 'LinkedIn'
         }
       ]
     }

@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import { HeaderStyles } from '../../global.styles';
 
+import { ReactComponent as GithubIcon } from '../../assets/icon-github.svg'
+
 export const ProjectContainer = styled.div`
     width: 100%;
 `
-
 
 export const ProjectHeader = styled.div`
     ${HeaderStyles}
@@ -90,7 +91,13 @@ export const IconsContainer = styled.ul`
     justify-content: flex-end;
 `
 
-export const Icon = styled.li`
-
+export const Link = styled.a`
+    display: block;
+    width: 20px;
+    height: 20px;
 `
 
+export const GithubStyledIcon = styled(GithubIcon)`
+    width: 20px;
+    height: 20px;
+`

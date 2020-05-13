@@ -14,7 +14,7 @@ import {
     DetailHeader,
     DetailSubHeader,
     DetailDescriptions,
-    Description,
+    Description
 } from './career.styles'
 
 const Career = () => {
