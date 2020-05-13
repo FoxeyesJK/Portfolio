@@ -5,7 +5,7 @@ const PROJECT_DATA = [
       id: 1,
       title: 'Sport Platform',
       name: 'Sportify',
-      link: '',
+      link: 'http://www.sportify.online/',
       description: 'Sportify is a league management software that helps players manage their organization skills, and build strong relationships with their members.',
       backgroundColor: '#001a4d',
       stacks: [
